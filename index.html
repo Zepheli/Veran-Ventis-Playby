@@ -1,0 +1,127 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Tapestry&display=swap" rel="stylesheet">
+
+
+<body style="background-image: url('https://get.wallhere.com/photo/sunlight-colorful-sea-abstract-reflection-green-blue-underwater-atmosphere-light-ocean-wave-line-1920x1200-px-computer-wallpaper-atmosphere-of-earth-wind-wave-Multi-Color-719260.jpg'); background-repeat: no-repeat; background-size: cover !important; margin:0;">
+
+<img id="pic" align=right src=https://i.postimg.cc/4NYXBQXr/unknown-preview-rev-1-20.png width=auto height=100% style="margin-right:-200px;transition: 5s;">
+<br>
+<br>
+<br>
+
+<center>
+<div style="background-color:#79d2a6; border-style: double; border-color: #ffffff;">
+<font color="#ffffff" style="font-family: 'Grenze Gotisch', cursive;font-size:80px;"><b>Veran Ventis</b></font>
+ <br>
+
+ 
+<br>
+<div class="desc_text">
+<img id="topF" align=center src=https://i.postimg.cc/WzwbpRyB/topFrame.png style="width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;">
+<p class="scrollable" style="font-family: 'Tapestry', cursive;font-size:20px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
+<br>
+</p>
+<img id="BottomF" align=center src=https://i.postimg.cc/sXFVpDCF/bottom-Frame.png style="width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;">
+</div>
+<br>
+</div>
+</center>
+
+
+<!--<iframe width=0 height=0 src="https://www.youtube.com/embed/kWE_214fXuU?autoplay=1" title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen></iframe>-->
+
+
+<script>
+
+$(document).ready(function(){
+
+$('#pic').hide();
+$('#topF').hide();
+$('#BottomF').hide();
+$('font').hide();
+
+$('#pic').animate({"margin-right": '+=200'}, 1000);
+$('#pic').fadeTo(3000, 1.0);
+$('#topF').fadeTo(7000, 1.0);
+$('#BottomF').fadeTo(7000, 1.0);
+$('font').fadeTo(3000, 1.0);
+$(".desc_text").hover(function(){
+    $(this).find('p').animate({"height": '200'}, 500);
+    }, function(){
+    $(this).find('p').animate({"height": '100'}, 500);
+  });
+
+
+});
+
+</script>
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b38600; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b38600; 
+}
+p{
+	display: inline-block;
+    opacity: 1;
+    max-height: 200px;
+    height: 100px;
+    overflow: auto;
+    width: 40%;
+    color: #ffffff;
+    text-align: left;
+    transition: 1s;
+}
+p:hover{
+	
+}
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.scrollable {
+        
+
+        /* ie scrollbar color properties */
+        scrollbar-base-color: #ffffff;
+        scrollbar-face-color: #ffffff;
+        scrollbar-3dlight-color: #ffffff;
+        scrollbar-highlight-color: #ffffff;
+        scrollbar-track-color: #79d2a6;
+        scrollbar-arrow-color: #ffffff;
+        scrollbar-shadow-color: #ffffff;
+        scrollbar-dark-shadow-color: #ffffff;
+        
+        
+  }
+  
+    
+    
+}
+</style>
